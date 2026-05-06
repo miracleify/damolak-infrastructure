@@ -52,3 +52,14 @@ module "alb" {
   app_port           = var.app_port
   target_group_name  = "damolak-tg"
 }
+
+
+module "monitoring" {
+  source = "./modules/monitoring"
+
+  environment = var.environment
+  alert_email = var.alert_email
+
+  enable_slack       = var.enable_slack
+  slack_webhook_url  = var.slack_webhook_url
+}
