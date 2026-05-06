@@ -10,7 +10,7 @@ crash.log
 *.tfvars
 
 #allow dev tfvars for demo
-#!damolak-infrastructure/environments/dev/terraform.tfvars
+!damolak-infrastructure/environments/dev/terraform.tfvars
 
 # Node
 node_modules/
