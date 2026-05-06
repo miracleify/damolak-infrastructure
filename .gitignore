@@ -1,0 +1,27 @@
+# Terraform
+.terraform/
+**/.terraform/
+*.tfstate
+*.tfstate.*
+**/*.tfstate*
+crash.log
+
+# Terraform variables
+*.tfvars
+
+#allow dev tfvars for demo
+#!damolak-infrastructure/environments/dev/terraform.tfvars
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
+
+# Env
+.env
+.env.*
+
+# Terraform Lock File (optional)
+
+.terraform.lock.hcl
